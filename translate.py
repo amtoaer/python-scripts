@@ -9,9 +9,11 @@ import random
 import json
 @click.command()
 @click.argument('sentence')
+# 原文语种默认自动识别
 @click.option('-f', default='auto', help='Language you want to translate.')
+# 译文语种默认英语（可自行修改）
 @click.option('-t', default='en', help='Language you want to translate to.')
-# appid和密钥可以在百度翻译开放平台获取
+# 注释中的appid和密钥可以在百度翻译开放平台获取
 def main(sentence, f, t):
     q = sentence
     appid = ''  # 填写你的appid

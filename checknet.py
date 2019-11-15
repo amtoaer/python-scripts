@@ -14,6 +14,7 @@ if len(result):
     for x in result:
         sum = sum + float(x)
     result = sum / len(result)
+# 这里可以修改延迟的判断界限和配色方案
     if result <= 50:
         print('\033[0;32;42m██\033[0m 当前网络延迟为{:.2f}ms.'.format(result))
     elif result > 50 and result <= 200:
