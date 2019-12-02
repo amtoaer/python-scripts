@@ -24,7 +24,7 @@
    ```bash
    ❯ ./translate.py '这是一条测试' -f zh -t en
    This is a test
-   ❯ trans 'this is a test' -f en -t jp         
+   ❯ ./translate.py 'this is a test' -f en -t jp         
    これはテストです
    ```
 
