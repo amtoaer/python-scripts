@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# 生成的图片自动命名为automachine_num.png，num为1...n
+
 import os
 import re
 
@@ -18,6 +20,7 @@ def findcount(path):
         count = 1
     finally:
         return count
+# 获取当前编号
 
 
 def main(count, path):
@@ -44,6 +47,7 @@ def main(count, path):
     File.close()
     os.system('dot -Tpng '+path+'temp >'+path+'automachine_'+str(count)+'.png')
     os.system('rm '+path+'temp')
+# 新建的文件编号为当前编号+1
 
 
 if __name__ == '__main__':
