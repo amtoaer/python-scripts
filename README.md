@@ -1,25 +1,31 @@
-# python-scripts
-***按需更新，脚本中给出了粗略的注释（不过这么简单估计大家一看就懂啦)***
+# `python-scripts`
+> ***按需更新，脚本中给出了粗略的注释（不过这么简单估计大家一看就懂啦)***
+>
+> ***linux环境下可以给予脚本运行权限后放入环境变量中，便于使用***
 
-***linux环境下可以给予脚本运行权限后放入环境变量中，便于使用***
+**一些本人基于个人需要和使用习惯瞎球写成的脚本：**
 
-一些本人基于个人需要和使用习惯瞎球写成的脚本：
+1. `capacity.py`
 
-1. capacity.py：查看系统当前电量（仅linux可用）
+   查看系统当前电量（*仅linux可用*）
 
    ```bash
    ❯ ./capacity.py     
    当前电量为100%
    ```
 
-2. checknet.py：测试当前网络延迟
+2. `checknet.py`
+
+   测试当前网络延迟
 
    ```bash
    ❯ ./checknet.py            
    ██ 当前网络延迟为46.70ms.
    ```
 
-3. translate.py：基于百度翻译api的翻译脚本
+3. `translate.py`
+
+   基于百度翻译api的翻译脚本
 
    ```bash
    ❯ ./translate.py '这是一条测试' -f zh -t en
@@ -28,7 +34,9 @@
    これはテストです
    ```
 
-4. automachine.py：用于生成自动机的状态转移图（需安装`Graphviz`）
+4. `automachine.py`
+
+   用于生成自动机的状态转移图（需安装`Graphviz`）
 
    ```bash
    ❯ ./automachine.py
@@ -39,7 +47,9 @@
 
    ![生成示例](https://img.vim-cn.com/a1/d2c5d4008bd8dc64ea84bb598f66acd787c394.png)
 
-5. weather.py：基于和风天气api的天气脚本
+5. `weather.py`
+
+   基于和风天气api的天气脚本
 
    ```bash
    ❯ ./weather.py --now     
@@ -83,4 +93,13 @@
    
    ```
 
-   
+   6. `ipv6broadcast.py`
+
+      获取东北大学的ipv6电视直播源并写入播放列表，可供`vlc/potplayer`等播放器播放（*校园网环境下运行*）
+
+      ```bash
+      ❯ ./ipv6broadcast.py
+      操作成功！已向播放列表写入188条直播数据！
+      ```
+
+      
