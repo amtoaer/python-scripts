@@ -91,10 +91,14 @@
        风力: 4-5级
        降雨概率: 16%
    ```
-6. `ipv6broadcast.py` 
-获取东北大学的ipv6电视直播源并写入播放列表，供`vlc/potplayer`等播放器播放（需校园网环境运行）
-	
+   
+6. `ipv6broadcast.py`
+   
+   获取东北大学ipv6直播源并写入播放列表，可供`vlc/potplayer`等播放器观看（需校园网环境运行）
+   
    ```bash
-	❯ ./ipv6broadcast.py
-	操作成功！已向播放列表写入188条直播数据！
-	```
+   ❯ ./ipv6broadcast.py
+   操作成功！已向播放列表写入188条直播数据！
+   ```
+   
+   
