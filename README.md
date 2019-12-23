@@ -1,4 +1,6 @@
 # `python-scripts`
+![](https://img.shields.io/badge/language-python-blue.svg)![](https://img.shields.io/badge/version-v1.0.0-green.svg)![](https://img.shields.io/badge/platform-linux|windows|osx-red.svg)
+
 > ***按需更新，脚本中给出了粗略的注释（不过这么简单估计大家一看就懂啦)***
 >
 > ***linux环境下可以给予脚本运行权限后放入环境变量中，便于使用***
