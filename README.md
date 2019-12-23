@@ -7,7 +7,7 @@
 
 1. `capacity.py`
 
-   查看系统当前电量（*仅linux可用*）
+   查看系统当前电量*（仅linux可用）*
 
    ```bash
    ❯ ./capacity.py     
@@ -36,7 +36,7 @@
 
 4. `automachine.py`
 
-   用于生成自动机的状态转移图（需安装`Graphviz`）
+   用于生成自动机的状态转移图*（需安装`Graphviz`）*
 
    ```bash
    ❯ ./automachine.py
@@ -90,16 +90,13 @@
        风向: 南风
        风力: 4-5级
        降雨概率: 16%
-   
    ```
-
-   6. `ipv6broadcast.py`
-
-      获取东北大学的ipv6电视直播源并写入播放列表，可供`vlc/potplayer`等播放器播放（*校园网环境下运行*）
-
-      ```bash
-      ❯ ./ipv6broadcast.py
-      操作成功！已向播放列表写入188条直播数据！
-      ```
-
-      
+6. `ipv6broadcast.py`   
+获取东北大学的ipv6电视直播源并写入播放列表，供`vlc/potplayer`等播放器播放*（需校园网环境运行）*
+	
+   ```bash
+	❯ ./ipv6broadcast.py
+	操作成功！已向播放列表写入188条直播数据！
+```
+   
+   
