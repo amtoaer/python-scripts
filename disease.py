@@ -15,7 +15,7 @@ def main(area):
     html.encoding = 'utf=8'
     soup = BeautifulSoup(html.text, features='lxml')
     # 正则表达式
-    re1 = r'全国：(.+)\s'
+    re1 = r'全国：?\s*(.+)\s'
     re2 = r'(.+?[省,市,区,门,港])\s+(.+)$'
     # 全国信息位于的标签与省市不同，分开处理
     country = soup.findAll('p', class_='confirmedNumber___3WrF5')[0].get_text()
