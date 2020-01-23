@@ -15,11 +15,10 @@ def main(area):
     html.encoding = 'utf=8'
     soup = BeautifulSoup(html.text, features='lxml')
     # 正则表达式
-    re1 = r'全国：?\s*(.+)$'
     re2 = r'(.+?)\s+(.+)$'
     # 全国信息位于的标签与省市不同，分开处理
     country = soup.findAll('p', class_='confirmedNumber___3WrF5')[0].get_text()
-    dic['全国'] = re.search(re1, country).groups()[0]
+    dic['全国'] = country
     # 遍历省市数据，使用正则表达式匹配，构建字典
     for item in soup.findAll('p', class_='descList___3iOuI'):
         content = item.get_text()
