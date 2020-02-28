@@ -102,3 +102,25 @@
    操作成功！已向播放列表写入188条直播数据！
    ```
    
+7. `imagehost.py`
+
+   一个简单易用的命令行图床工具，支持文件、目录上传（使用`缩狗图床api`）
+   
+   > 阿里巴巴（1688）`api`可以正常使用，其它未测试。
+   >
+   > 使用方法详见`./imagehost.py --help`.
+   
+   ```bash
+   ❯ ls
+   imagehost.py    pic/    pic1.jpg    pic2.jpg
+   ❯ ls ./pic
+   pic3.png    pic4.png
+   ❯ ./imagehost.py ./pic ./pic1.jpg --type 1688
+   开始上传...
+   pic1.jpg : https://ae01.alicdn.com/kf/Uc199ae5fcc914575bd8dfc2e36863b1df.jpg
+   pic4.jpg : https://ae01.alicdn.com/kf/U8112b51e02984363aa09337ad7748dc0g.jpg
+   pic3.jpg : https://ae01.alicdn.com/kf/Uebc01361e6304815b4adabbba8a7ce51I.jpg
+   上传完成，共上传3张图片!
+   ```
+   
+   
