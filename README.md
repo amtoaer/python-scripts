@@ -121,7 +121,6 @@
    上传完成，共上传3张图片!
    ```
    
-
 8. `checkupdate.py`
 
    检查`qq for linux`更新的小工具，默认每五分钟刷新一次（虽然可能半年都不会更新 XD）
@@ -136,4 +135,14 @@
    ...(更新后在此显示)
    ```
 
+
+9. `bettermark.py`
+
+   一个十分简单的美化`chrome`导出书签的工具，需搭配[chrome-export](https://github.com/bdesham/chrome-export)使用。运行后将在当前目录生成美化后的`index.html`（虽然仍然很丑但还是比默认好了一丢丢啦）
+
+   | 默认                                                      | 美化后                                                   |
+   | --------------------------------------------------------- | -------------------------------------------------------- |
+   | [demo](https://jeasonlau.xyz:10000/bookmarks/before.html) | [demo](https://jeasonlau.xyz:10000/bookmarks/index.html) |
+
    
+
