@@ -5,7 +5,7 @@ import os
 
 def main():
     os.system("export-chrome-bookmarks ./temp.html")
-    head = '''<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    head = '''<script src="https://cdn.bootcss.com/jquery/3.5.0/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="https://cdn.bootcss.com/flat-ui/2.3.0/css/flat-ui.min.css" rel="stylesheet" charset="utf-8">'''
