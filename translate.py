@@ -7,6 +7,9 @@ import hashlib
 import urllib
 import random
 import json
+from rich.console import Console
+from rich.table import Column, Table
+console=Console()
 @click.command()
 @click.argument('sentence')
 # 原文语种默认自动识别
@@ -38,9 +41,15 @@ def main(sentence, f, t):
         response = httpClient.getresponse()
         result_all = response.read().decode("utf-8")
         result = json.loads(result_all)
-        dst = str(result['trans_result'][0]['dst'])
-        print(dst)
-
+        table = Table(show_header=True, header_style="bold red")
+        table.add_column("From", style="dim", width=5)
+        table.add_column("To",width=5)
+        table.add_column("Source", justify="right",width=25)
+        table.add_column("Destination", justify="right",width=25)
+        table.add_row(
+                    result['from'],result['to'],result['trans_result'][0]['src'],result['trans_result'][0]['dst']
+                )
+        console.print(table)
     except Exception as e:
         print(e)
     finally:
